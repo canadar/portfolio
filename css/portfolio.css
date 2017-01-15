@@ -1,0 +1,263 @@
+@font-face{
+    font-family: Photonica_regular;
+    src: url(../font/Photonica_regular.ttf);
+}
+
+@font-face{
+    font-family: bauer;
+    src: url(../font/Bauer.ttf);
+}
+@font-face{
+    font-family: hurtmold;
+    src: url(../font/HURTM___.otf);
+}
+
+ /*misc */
+.row{
+    margin: 0;
+}
+#embedded-resume{
+    max-width:1024px;
+    margin: auto; 
+}
+#resume-download{
+    max-width: 275px;
+    min-width: 275px;
+    margin: 10px auto;
+    padding-right: 25px;
+}
+
+.jumbotron{
+    margin-bottom: 0;
+    font-family: hurtmold;
+    color: white;
+    background: url("../img/bg.jpg") no-repeat;
+    background-size: 100% 110%;
+    height: 250px;
+}
+h1{
+    font-family: hurtmold;
+    margin-left: 30px;
+}
+
+.section-header{
+    font-family: Photonica_regular;
+    font-size: 24px;
+}
+
+#profile-pic{
+    background: url("../img/heather.jpg") no-repeat center center;
+    background-size: contain;
+    min-height: 450px;
+    max-height: inherit;
+}
+#profile-bio{
+    max-height: inherit;
+    font-size: 16px
+}
+.about-container{
+    width: 75%;
+    min-height: 500px;
+    max-width: 1000px;
+    min-width: 950px;
+    margin: 0 auto;
+    background-color: rgba(119,136,153,0.60);
+    border: solid black;
+    border-width: 2px 2px;
+    padding-top: 20px;
+}
+.about-container p{
+    min-width: 355px;
+}
+
+/* FOOTER */
+#footer{
+    margin-bottom: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+#footer .row{
+    margin: 0;
+}
+
+#footer p{
+    margin-bottom: 0;
+    font-size: 12px;
+    padding-top: 25px;
+}
+
+/*Download and Send Buttons */
+/* Download Button - will need to replace html button with only anchor tags */
+.download-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.download-btn{
+    margin-right: 5px;
+}
+
+/* bootstrap button override */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: grey;
+    box-shadow: none;
+}
+
+.page-btn{
+    border-radius: 0px;
+    border: 0;
+    background: dimgrey;
+}
+.page-btn a{
+    color:white;
+    text-decoration: none;
+}
+
+/* NAV */
+#main-nav{
+    border-radius: 0;
+    border: 0;
+    background-color: rgba(0,0,0,0.95);
+    font-family: bauer;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.navbar-nav.nav-justified > li{
+    float:none;
+}
+
+#main-nav .nav a::after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+#main-nav .nav a:hover::after{
+    width: 100%;
+    background: white;
+}
+
+#footer a{
+    transition: ease-in-out, 550ms;
+}
+
+/*PORTFOLIO */
+#sinvasion{
+    background: url("../img/games/spirit/1.jpg") no-repeat center center;
+    background-size: 100% 100%;
+}
+#hugo{
+    background: url("../img/games/hugo/4.jpg") no-repeat center center;
+    background-size: 100% 100%;
+}
+#ktr{
+    background: url("../img/games/ktr/5.jpg") no-repeat center center;
+    background-size: 100% 100%;
+}
+#defrag{
+    background: url("../img/games/defrag/poster.jpg") no-repeat center center;
+    background-size: 100% 180%;
+}
+
+.card-container{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.portfolio-card{
+    background-color: black;
+    min-height: 375px;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 12px;
+    box-shadow: -1px 3px 20px #000000;
+}
+
+.portfolio-container{
+    min-height: 400px;
+    margin-bottom: 20px;
+}
+
+/* TRANSITIONS */
+.game-image{
+    min-height:375px;
+    width:100%;
+    overflow: hidden;
+}
+.game-image a{
+    text-decoration: none;
+}
+
+.bg-wrapper{
+    background-color: rgba(0,0,0,0.0);
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+    width: 100%;
+    height: 375px;
+}
+
+.bg-wrapper > p{
+    color: white;
+    font-family: hurtmold;
+    font-size: 28px;
+}
+
+.fadable:hover .bg-wrapper{
+    background-color: rgba(0,0,0,0.60);
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+.fadable:hover p{
+    left: 10px;
+}
+
+ .text-slide{
+     position:relative;
+     left: -250px;
+     top: 330px;
+     -webkit-transition:left 0.5s ease-in-out;
+     transition:left 0.5s ease-in-out;
+ }
+
+/* SECTIONS */
+.site-container{
+    padding-bottom: 20px;
+}
+
+#about{
+    color: white;
+    background-color: white;
+    min-height: 700px;
+    background: url("../img/lan-bg.jpg") no-repeat;
+    background-size: 100% 110%;
+}
+
+#projects{
+    background-color: lightgray;
+    background: url("../img/texture/triangular.png");
+}
+
+#resume{
+    color: white;
+    background-color: lightgray;
+    background: url("../img/texture/footer_lodyas.png");
+}
+
+#contact{
+    background-color: lightgray;
+    background: url("../img/texture/triangular.png");
+}
