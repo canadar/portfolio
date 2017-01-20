@@ -243,6 +243,9 @@ h1{
      -webkit-transition:left 0.5s ease-in-out;
      transition:left 0.5s ease-in-out;
  }
+ textarea{
+     resize: none;
+ }
 
 /* SECTIONS */
 .site-container{
