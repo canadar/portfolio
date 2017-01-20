@@ -17,4 +17,7 @@
             echo("Failed to send mail");
         }
     }
+    else{
+        echo("Failed to send mail");
+    }
 ?>
