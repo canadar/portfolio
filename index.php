@@ -14,10 +14,10 @@
         }
         else
         {
-            echo("Failed to send mail");
+            echo("Failed to send mail mail function failed");
         }
     }
     else{
-        echo("Failed to send mail");
+        echo("Failed to send mail: submit not set");
     }
 ?>
